@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParticleMover 3</title>
+    <link rel="stylesheet" text="text/css" href="style_of_the_stage.css">
+</head>
+<body>
+    <div id="content">
+        <h1>Conway's Game of Life</h1>
+        <i style="font-size: large;">created by Vulpe Andrei</i><br>
+        <i style="font-size: large;">on 21/10/2021</i><br>
+        <br><br>
+        <button class="btn btn-start" onclick="start_time(); color(this, '#66e266de'); color('.btn-stop', '#e2666650')">Start time</button>
+        <button class="btn btn-stop" onclick="stop_time(); color(this, '#e26666de'); color('.btn-start', '#66e26650')">Stop time</button>
+        <button class="btn btn-reset" onclick="location.reload()">Reset</button><br><br>
+        <canvas id="canvas" width="800" height="400" onmousemove="note(event)" onclick="change()"></canvas>
+        <p>
+            The rules, which compare the behavior of the 
+            automaton to real life, can be condensed into the 
+            following:<br>
+        </p>
+        <p>
+            1 Any live cell with two or three live neighbours survives.<br>
+            2 Any dead cell with three live neighbours becomes a live cell.<br>
+            3 All other live cells die in the next generation. Similarly, all other dead cells stay dead.
+        </p>
+    </div>
+
+    <script src="functions.js"></script>
+    <script src="doing_stuff.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body{
+    background-image: url("cool-bg-3.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 160%;
+    background-color: black;
+}
+#content{
+    text-align: center;
+    color:white;
+}
+
+canvas{
+    border:3px double red;
+    opacity: 0.8;
+}
+
+.btn{
+    padding:15px;
+    border-radius: 20px;
+    font-size: large;
+    color:white
+}
+
+.btn-start{
+    background-color: #66e26650;
+    border:2px solid green;
+}
+
+.btn-start:hover{
+    background-color: #66e266ab;
+}
+
+.btn-stop{
+    background-color: #e2666650;
+    border:2px solid red;
+}
+
+.btn-stop:hover{
+    background-color: #e26666ab;
+}
+
+.btn-reset{
+    background-color: #6672e250;
+    border:2px solid blue;
+}
+
+.btn-reset:hover{
+    background-color: #6672e2ab;
+}
+
+p{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
